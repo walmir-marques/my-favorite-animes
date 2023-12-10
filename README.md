@@ -1,3 +1,20 @@
+Passos realizados para realizar o projeto e conceitos / ferramentas utilizadas.
+
+1. Todo css do App foi feito utilizando tailwindcss.
+2. O intuito do App, foi construir algo simples para praticar o uso de criação de componentes, useState e Props.
+3. Todos os dados do App esta armazenado em um objeto na pasta data/AnimesData.js
+
+Primeiro passo foi criar um componente chamado AnimeCard, que recebe como parametro um anime e exibe o animeImage e animeName na tela.
+Foi criado um state para rastrear se o Modal do anime ao clicar esta aberto ou nao e uma funcao para setar o modal como true e abri-lo.
+
+Se o valor for true, é chamado o componennte AnimeModal e passado como parametro o anime e uma funcao para fechar o modal.
+
+O componente AnimeModal é responsavel por criar uma tela que contem o titulo do anime clicado, uma pequena descricao e a foto e nome dos
+3 principais personagens daquele anime, e ao clicar no corpo do modal. ou em um botao de fechar no canto superior direito o mesmo é fechado.
+
+O componente App.js desssa aplicacao é responsavel somente for exibir um titulo de meus animes favoritos e através da funcao map, percorrer o
+objeto de animes e chamar para cada anime disponivel, um componente AnimeCard.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
